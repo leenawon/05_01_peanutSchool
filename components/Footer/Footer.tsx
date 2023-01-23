@@ -1,4 +1,3 @@
-import { useInView } from 'react-intersection-observer';
 import styles from './Footer.module.scss';
 
 export default function Footer() {
