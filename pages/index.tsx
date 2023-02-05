@@ -1,18 +1,5 @@
 import { useInView } from 'react-intersection-observer';
-import AnyTime from '../components/AnyTime/AnyTime';
-import Bookmarks from '../components/Bookmarks/Bookmarks';
-import CheckedBook from '../components/CheckedBook/CheckedBook';
-import DownloadButton from '../components/DownloadButton/DownloadButton';
-import DownloadNow from '../components/DownloadNow/DownloadNow';
-import Footer from '../components/Footer/Footer';
-import InfiniteScrollBooks from '../components/InfiniteScrollBooks/InfiniteScrollBooks';
-import Introduction from '../components/Introduction/Introduction';
-import Layout from '../components/Layout/Layout';
-import LiveVideo from '../components/LiveVideo/LiveVideo';
-import MainImage from '../components/MainImage/MainImage';
-import NavBar from '../components/NavBar/NavBar';
-import ReadingDiary from '../components/ReadingDiary/ReadingDiary';
-import SlideComments from '../components/SlideComments/SlideComments';
+import { AnyTime, Bookmarks, CheckedBook, DownloadButton, DownloadNow, Footer, InfiniteScrollBooks, Introduction, Layout, LiveVideo, MainImage, ReadingDiary, SlideComments } from '../components';
 
 export default function index() {
   const { ref: MainImage_Ref, inView: MainImage_Inview } = useInView({
@@ -21,10 +8,10 @@ export default function index() {
   const { ref: Introduction_Ref, inView: Introduction_Inview } = useInView({
     threshold: 0,
   });
-  const { ref: LIVE_REF, inView: LIVE_INVIEW } = useInView({
+  const { ref: LIVE_REF, inView: Live_Inview } = useInView({
     threshold: 0,
   });
-  const { ref: CheckedBook_Ref, inView: ChekedBook_Inview } = useInView({
+  const { ref: CheckedBook_Ref, inView: CheckedBook_Inview } = useInView({
     threshold: 0,
   });
   const { ref: AnyTime_Ref, inView: AnyTime_Inview } = useInView({
@@ -45,8 +32,8 @@ export default function index() {
       <Layout />
       <MainImage wRef={MainImage_Ref} wInView={MainImage_Inview} />
       <Introduction wRef={Introduction_Ref} wInView={Introduction_Inview} />
-      <LiveVideo wRef={LIVE_REF} wInView={LIVE_INVIEW} />
-      <CheckedBook wRef={CheckedBook_Ref} wInView={ChekedBook_Inview} />
+      <LiveVideo wRef={LIVE_REF} wInView={Live_Inview} />
+      <CheckedBook wRef={CheckedBook_Ref} wInView={CheckedBook_Inview} />
       <AnyTime wRef={AnyTime_Ref} wInView={AnyTime_Inview} />
       <ReadingDiary wRef={ReadingDiary_Ref} wInView={ReadingDiary_Inview} />
       <InfiniteScrollBooks
