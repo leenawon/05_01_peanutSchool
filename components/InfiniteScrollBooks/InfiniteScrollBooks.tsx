@@ -1,5 +1,5 @@
 import styles from './InfiniteScrollBooks.module.scss';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { scrollBookImages } from '../../constants/constants';
 import { InViewProps } from '../../utils/inViewType';
 

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './ErrorPage.module.scss';
+import styles from '../styles/ErrorPage.module.scss';
 
 export default function ErrorPage() {
   return (
